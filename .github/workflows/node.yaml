@@ -1,8 +1,9 @@
 name: Node.js Package
 
 on:
-  release:
-    types: [created]
+  registry_package:
+    types: [published]
+  workflow_dispatch:
 
 jobs:
   build:
